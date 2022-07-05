@@ -1,5 +1,5 @@
 import { app } from "./server";
 
-// import { usersRoutes }  from "./routes/usersRoutes/usersRoutes";
+import { routes }  from "./routes/routes";
 
-// app.use("/users", usersRoutes);
+app.use("/user", routes);
