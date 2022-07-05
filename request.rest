@@ -1,0 +1,10 @@
+###
+POST http://localhost:3003/user/cadaster
+Content-Type: application/json
+
+{
+"name": "Gabriel Teste",
+ "email": "gabriel_teste@gmail.com", 
+ "password": "123456", 
+ "role": "normal"
+}
