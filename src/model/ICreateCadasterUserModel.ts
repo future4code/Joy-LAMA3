@@ -3,7 +3,7 @@ enum Role {
   ADMIN = "admin"
 };
 
-export interface ICreateCadasterModelData {
+export interface ICreateCadasterUserModelData {
   id: string;
   name: string;
   email: string;
@@ -11,7 +11,7 @@ export interface ICreateCadasterModelData {
   role: Role;
 };
 
-export interface ICreateCadasterModel {
-  create: ( data: ICreateCadasterModelData ) => Promise<void>;
+export interface ICreateCadasterUserModel {
+  create: ( data: ICreateCadasterUserModelData ) => Promise<void>;
   emailExist: ( email: string ) => Promise<boolean>;
 };

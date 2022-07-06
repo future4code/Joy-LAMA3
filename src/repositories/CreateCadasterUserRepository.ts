@@ -1,14 +1,14 @@
 import { 
-  ICreateCadasterModel, 
-  ICreateCadasterModelData
- } from "../model/ICreateCadasterModel";
+  ICreateCadasterUserModel, 
+  ICreateCadasterUserModelData
+ } from "../model/ICreateCadasterUserModel";
 
  import { Database } from "../data/database/Database";
 
- export class CreateCadasterRepository extends Database implements ICreateCadasterModel {
+ export class CreateCadasterUserRepository extends Database implements ICreateCadasterUserModel {
   private TABLE_NAME = "LAMA_USUARIOS";
 
-  async create (data: ICreateCadasterModelData) {
+  async create (data: ICreateCadasterUserModelData) {
     await Database.connectionDatabase(this.TABLE_NAME).insert(data);
   };
 

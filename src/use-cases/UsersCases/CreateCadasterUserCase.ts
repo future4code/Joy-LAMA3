@@ -1,4 +1,4 @@
-import { ICreateCadasterModel } from "../../model/ICreateCadasterModel";
+import { ICreateCadasterUserModel } from "../../model/ICreateCadasterUserModel";
 
 import { generateId } from "../../services/generateId";
 
@@ -8,22 +8,22 @@ enum Role {
   ADMIN = "admin"
 };
 
-interface ICreateCadasterCaseRequest {
+interface ICreateCadasterUserCaseRequest {
   name: string;
   email: string;
   password: string;
   role: Role;
 };
 
-export class CreateCadasterCase {
+export class CreateCadasterUserCase {
   constructor (
-    private readonly createCadasterModel: ICreateCadasterModel
+    private readonly createCadasterUserModel: ICreateCadasterUserModel
   ) {};
 
-    async createCadaster ( request: ICreateCadasterCaseRequest ) {
+    async createCadaster ( request: ICreateCadasterUserCaseRequest ) {
       const { name, email, password, role } = request;
 
-      const userEmail = await this.createCadasterModel.emailExist(email);
+      const userEmail = await this.createCadasterUserModel.emailExist(email);
 
       if ( !name || !email || !password || !role ) throw new Error("Ola mundo.");
 
@@ -31,7 +31,7 @@ export class CreateCadasterCase {
 
       const id = generateId();
 
-      await this.createCadasterModel.create({
+      await this.createCadasterUserModel.create({
         id,
         name,
         email,
