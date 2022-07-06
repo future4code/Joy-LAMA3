@@ -3,8 +3,17 @@ POST http://localhost:3003/user/cadaster
 Content-Type: application/json
 
 {
-"name": "Gabriel Teste",
- "email": "gabriel_teste@gmail.com", 
+"name": "Ricardo Ribeiro",
+ "email": "rickhard@gmail.com", 
  "password": "123456",
  "role": "admin"
+}
+
+###
+POST http://localhost:3003/user/singup
+Content-Type: application/json
+
+{
+   "email": "rickhard@gmail.com",
+   "password": "1234567"
 }
