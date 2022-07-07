@@ -33,7 +33,7 @@ export const createCadasterUserController = async ( req: Request, res: Response 
     });
     
     return res.status(201).json({ 
-      message: `Usuário ${name} criado com sucesso.`,
+      message: `Usuário: ${name} criado com sucesso.`,
       token: tokenSuccess
     });
 };

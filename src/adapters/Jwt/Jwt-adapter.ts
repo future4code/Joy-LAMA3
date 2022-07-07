@@ -8,7 +8,7 @@ import {
 
 
 export class JwtAdapter implements IJwtAdapter {
-  generateToken ( { id, role }: IJwtAdapterAuthenticationData ) {
+  generateToken ( {  id, role }: IJwtAdapterAuthenticationData ) {
     const expiresIn = "24h";
     const toke = jwt.sign(
       {
@@ -27,6 +27,7 @@ export class JwtAdapter implements IJwtAdapter {
     const payload = jwt.verify(token, process.env.JWT_KEY as string) as IJwtAdapterAuthenticationData;
     const result = {
       id: payload.id,
+      role: payload.role
     };
     return result;
   };

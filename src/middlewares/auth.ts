@@ -14,8 +14,9 @@ export const authMiddleware = ( req: Request, res: Response, next: NextFunction 
   try {
     const decoded = jwt.getTokenData({ token });
 
-    const { id } = decoded;
+    const { id, role } = decoded;
     req.userId = id;
+    req.role = role;
 
     next();
     } catch (error) {

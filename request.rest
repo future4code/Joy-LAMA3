@@ -1,3 +1,5 @@
+// ============================= USERS =====================================
+
 ###
 POST http://localhost:3003/user/cadaster
 Content-Type: application/json
@@ -10,10 +12,36 @@ Content-Type: application/json
 }
 
 ###
-POST http://localhost:3003/user/singup
+POST http://localhost:3003/user/cadaster
+Content-Type: application/json
+
+{
+"name": "Gabrie",
+ "email": "gabriel@gmail.com", 
+ "password": "123456",
+ "role": "normal"
+}
+
+###
+POST http://localhost:3003/user/signup
 Content-Type: application/json
 
 {
    "email": "rickhard@gmail.com",
-   "password": "1234567"
+   "password": "123456"
 }
+
+//====================== BANDS ==============================
+
+###
+POST http://localhost:3003/band/register
+Content-Type: application/json
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBlY2JmMWQxLWZjOGEtNDRhYy05NWExLTg1YzJjNGU0NzBmNiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY1NzE5NTUyOCwiZXhwIjoxNjU3MjgxOTI4fQ.SXa7UDysO4EMhQO1L7ql3vPhpi-AHQ8bhuLjCexQwCg
+
+{
+"name": "Teste",
+ "photo": "teste photo", 
+ "musicGenre": "Teste music",
+ "responsible": "Teste responsible"
+}
+
