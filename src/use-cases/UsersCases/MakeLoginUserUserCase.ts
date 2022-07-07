@@ -1,7 +1,7 @@
 import { IMakeLoginUserModel } from "../../model/IMakeLoginUserModel";
 import { IJwtAdapter } from "../../adapters/ijwt-adapter";
 import { IBCryptAdapter } from "../../adapters/ibcrypt-adapter";
-import { validateEmail } from "../../services/validate-email";
+import { validateEmail } from "../../utils/validate-email";
 
 import { VerifyEmail,
     VerifyPasswordQuantityLine,

@@ -3,7 +3,7 @@ import { CustomError } from "../CustomError";
 export class VerifyInformationsRequest extends CustomError {
   constructor () {
     super (
-      "Verifique si uma dessas informações não estaõ faltando: ( name, photo, musicGenre, responsible )!", 
+      "Check that one of these information is not missing: ( name, photo, musicGenre, responsible )!.", 
         406
       )
   };
@@ -12,7 +12,7 @@ export class VerifyInformationsRequest extends CustomError {
 export class VerifyExistBand extends CustomError {
   constructor ( public name: string ) {
     super (
-      `Já existe uma banda cadastrada com esse nome: (${name})!.`, 
+      `There is already a band registered with this name: (${name})!.`, 
         409
       )
   };
@@ -21,7 +21,7 @@ export class VerifyExistBand extends CustomError {
 export class VerifyRole extends CustomError {
   constructor () {
     super (
-      `Apenas usuários administradores podem cadastrar bandas!.`, 
+      `Only admin users can register bands!.`, 
         401
       )
   };

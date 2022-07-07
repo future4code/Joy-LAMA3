@@ -1,6 +1,6 @@
 import { IRegisterBandModel } from "../../model/IRegisterBandModel";
 
-import { generateId } from "../../services/generate-id";
+import { generateId } from "../../utils/generate-id";
 
 import {
   VerifyExistBand,
