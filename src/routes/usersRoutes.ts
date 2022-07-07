@@ -8,4 +8,4 @@ import { makeLoginUserController } from './../controllers/usersControllers/makeL
 export const usersRoutes = express.Router();
 
 usersRoutes.post("/cadaster", createCadasterUserController);
-usersRoutes.post("/singup", makeLoginUserController);
+usersRoutes.post("/signup", makeLoginUserController);
