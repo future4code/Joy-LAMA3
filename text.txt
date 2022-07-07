@@ -1,0 +1,3 @@
+dia da semana : Vai ser um unum ( domingo, sabado ou sexta ).
+hora de início: dever ser um numero cheio entre 8 e 23
+hora do fim qualquer hora.
