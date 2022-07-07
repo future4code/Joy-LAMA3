@@ -3,7 +3,7 @@ import { CustomError } from "../CustomError";
 export class VerifyInformationsRequest extends CustomError {
   constructor () {
     super (
-      "Verifique si uma dessas informações não estaõ faltando: ( name, email, password )!", 
+      "Check that one of these information is not missing:( name, email, password )!", 
         406
       )
   };
@@ -12,7 +12,7 @@ export class VerifyInformationsRequest extends CustomError {
 export class VerifyEmail extends CustomError {
   constructor ( public email: string ) {
     super (
-      `O email passado: ( ${email} ), não segue o padrão correto!. Exemplo: ( usuario@gmail.com ).`, 
+      `Past email: ( ${email} ), does not follow the correct pattern!. Example: ( user@gmail.com ).`, 
         406
       )
   };
@@ -21,7 +21,7 @@ export class VerifyEmail extends CustomError {
 export class VerifyIfUserExist extends CustomError {
   constructor ( public email: string ) {
     super (
-      `Já existe um usuário cadastrado com esse email passado: ( ${email} )!.`, 
+      `There is already a registered user with this email address: ( ${email} )!.`, 
         409
       )
   };
@@ -30,7 +30,7 @@ export class VerifyIfUserExist extends CustomError {
 export class VerifySpacesPassword extends CustomError {
   constructor () {
     super (
-      `A senha passada não pode conter espaços em branco!.`, 
+      `The password passed cannot contain blanks!.`, 
         406
       )
   };
@@ -39,7 +39,7 @@ export class VerifySpacesPassword extends CustomError {
 export class VerifyPasswordQuantityLine extends CustomError {
   constructor ( public password: string ) {
     super (
-      `A senha deve ter no mínimo 6 caracteres. Sua senha possui: ( ${password.length} )!.`, 
+      `The password must be at least 6 characters long. Your password has: ( ${password.length} )!.`, 
         406
       )
   };
@@ -48,7 +48,7 @@ export class VerifyPasswordQuantityLine extends CustomError {
 export class VerifyRoles extends CustomError {
   constructor () {
     super (
-      `Os roles devem ser "Normal" ou "ADMIN"!.`, 
+      `The roles must be "Normal" or "ADMIN"!.`, 
         406
       )
   };

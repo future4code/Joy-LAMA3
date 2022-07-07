@@ -4,9 +4,9 @@ import { IBCryptAdapter } from "../../adapters/ibcrypt-adapter";
 import { IJwtAdapter } from "../../adapters/ijwt-adapter";
 import { IMailAdapter } from "../../adapters/inodemailer-adapter";
 
-import { generateId } from "../../services/generate-id";
-import { validateEmail } from "../../services/validate-email";
-import { checkSpace } from "../../services/check-space";
+import { generateId } from "../../utils/generate-id";
+import { validateEmail } from "../../utils/validate-email";
+import { checkSpace } from "../../utils/check-space";
 
 import { 
   VerifyEmail,

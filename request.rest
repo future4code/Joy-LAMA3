@@ -45,3 +45,7 @@ authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBlY2JmMWQxLWZjOGEt
  "responsible": "Teste responsible"
 }
 
+###
+GET http://localhost:3003/band/vingadores do brega
+Content-Type: application/json
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQwZWIzYjAzLTU0MzktNGY2MS1iNWI4LTQ5OGFkZGUxM2IwOCIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY1NzIyNTUxMywiZXhwIjoxNjU3MzExOTEzfQ.eR8NCySwUqAYWK60RBR4uPubYvsJH2DjumeprkSUAqM
