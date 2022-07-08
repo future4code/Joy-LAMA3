@@ -39,13 +39,27 @@ Content-Type: application/json
 authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBlY2JmMWQxLWZjOGEtNDRhYy05NWExLTg1YzJjNGU0NzBmNiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY1NzE5NTUyOCwiZXhwIjoxNjU3MjgxOTI4fQ.SXa7UDysO4EMhQO1L7ql3vPhpi-AHQ8bhuLjCexQwCg
 
 {
-"name": "Teste",
- "photo": "teste photo", 
- "musicGenre": "Teste music",
- "responsible": "Teste responsible"
+"name": "Banada Teste 1",
+ "photo": "Banda teste photo 1", 
+ "musicGenre": "BandaTeste music 1",
+ "responsible": "Banda Teste responsible 1"
 }
 
+
 ###
-GET http://localhost:3003/band/vingadores do brega
+GET http://localhost:3003/band/Banada Teste 1
 Content-Type: application/json
-authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQwZWIzYjAzLTU0MzktNGY2MS1iNWI4LTQ5OGFkZGUxM2IwOCIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY1NzIyNTUxMywiZXhwIjoxNjU3MzExOTEzfQ.eR8NCySwUqAYWK60RBR4uPubYvsJH2DjumeprkSUAqM
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBlY2JmMWQxLWZjOGEtNDRhYy05NWExLTg1YzJjNGU0NzBmNiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY1NzIxODM4OSwiZXhwIjoxNjU3MzA0Nzg5fQ.BVcJ8hitXwkuvZAxhn1N4ZI0jfpovX2gCW-ssR43dEE
+
+
+###
+POST http://localhost:3003/band/schedule/0f6e5890-c2c7-4cf2-9939-b00c094a2b49
+Content-Type: application/json
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBlY2JmMWQxLWZjOGEtNDRhYy05NWExLTg1YzJjNGU0NzBmNiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY1NzIxODU3MCwiZXhwIjoxNjU3MzA0OTcwfQ.z_GHvsuXG_GNl8bvsC8AcWol_Yk6wQjPZcD9z5Fd5f0
+
+{
+   "photo": "Show photo Test 4",
+   "weekDay": "SEXTA",
+   "startTime": 23,
+   "endTime": 5
+}
