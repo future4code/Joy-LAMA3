@@ -21,7 +21,12 @@ export const scheduleBandShowController = async ( req: Request, res: Response)
     scheduleBandShowRepository
    );
 
-   if ( weekDay ) weekDay = weekDay.toLowerCase();
+   if ( weekDay && startTime && endTime ) {
+      weekDay = weekDay.toLowerCase();
+      //* Sinal de ( + ) transforma um valor string em número.
+      startTime = +startTime;
+      endTime = +endTime;
+   };
 
    await scheduleBandShowCase.scheduleBandShow({
       roleUser,

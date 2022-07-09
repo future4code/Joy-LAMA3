@@ -55,11 +55,11 @@ authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBlY2JmMWQxLWZjOGEt
 ###
 POST http://localhost:3003/band/schedule/0f6e5890-c2c7-4cf2-9939-b00c094a2b49
 Content-Type: application/json
-authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBlY2JmMWQxLWZjOGEtNDRhYy05NWExLTg1YzJjNGU0NzBmNiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY1NzIxODU3MCwiZXhwIjoxNjU3MzA0OTcwfQ.z_GHvsuXG_GNl8bvsC8AcWol_Yk6wQjPZcD9z5Fd5f0
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBlY2JmMWQxLWZjOGEtNDRhYy05NWExLTg1YzJjNGU0NzBmNiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY1NzMwNzM2MiwiZXhwIjoxNjU3MzkzNzYyfQ.l3_mIxnP3uu3EToeB8d9UvpSoNwC_3ghQBtZyv3LiBo
 
 {
-   "photo": "Show photo Test 4",
-   "weekDay": "SEXTA",
-   "startTime": 23,
-   "endTime": 5
+   "photo": "Show photo Test 3",
+   "weekDay": "sábado",
+   "startTime": 20,
+   "endTime": 2
 }
