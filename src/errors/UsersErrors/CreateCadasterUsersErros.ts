@@ -39,7 +39,7 @@ export class VerifySpacesPassword extends CustomError {
 export class VerifyPasswordQuantityLine extends CustomError {
   constructor ( public password: string ) {
     super (
-      `The password must be at least 6 characters long. Your password has: ( ${password.length} )!.`, 
+      `The password cannot be less than 6 digits. Your password contains: ( ${password.length} )!.`, 
         406
       )
   };
