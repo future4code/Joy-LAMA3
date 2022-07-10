@@ -60,8 +60,8 @@ authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQwZWIzYjAzLTU0Mzkt
 {
    "photo": "https://2.bp.blogspot.com/-1tjtYYqfmWs/XNBgtcHh5CI/AAAAAAAARBQ/lxpQfWLaUBYzSfhmNa1u8jEITMy-Ft93QCLcBGAs/s1600/gugu14.jpg",
    "weekDay": "domingo",
-   "startTime": 9,
-   "endTime": 10
+   "startTime": 20,
+   "endTime": 24
 }
 
 ###
