@@ -1,9 +1,3 @@
-
-
-
-
-
-
 <h1 id="topo">IWFS-S21: LAMA 🎵</h1>
 
 ## Labenu Music Awards
@@ -12,6 +6,8 @@ Como você deve saber muito bem, o nosso querido chefinho Astrodev é uma pessoa
 Para isso já deixamos algumas tabelas prontas para vocês não precisarem se preocupar com a modelagem do banco. Deixamos também um template do projeto já com a estrutura da parte de usuários. Vocês podem usá-las a vontade, mas, se quiser fazer do zero sem esse auxílio, também pode.
 
 <h4 align="right"><a href="#topo">Topo</a></h4>
+
+[Documentação Postman](https://documenter.getpostman.com/view/18676295/UzJQotPD)
 
 
   * [O que funciona](#funciona)
