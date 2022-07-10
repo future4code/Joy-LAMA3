@@ -1,3 +1,9 @@
+
+
+
+
+
+
 <h1 id="topo">IWFS-S21: LAMA 🎵</h1>
 
 ## Labenu Music Awards
@@ -18,10 +24,10 @@ Para isso já deixamos algumas tabelas prontas para vocês não precisarem se pr
   ###
 
   * [O que ainda não funciona](#nfunciona)
-       * [7 - Endpoint de criar um ingresso](#)
-       * [8 - Comprar ingresso](#)
-       * [9 - Adicionar foto](#)
-       * [10 - Pegar todas as fotos](#)
+       * [7 - Endpoint de criar um ingresso](#ticket)
+       * [8 - Comprar ingresso](#taketicket)
+       * [9 - Adicionar foto](#addphoto)
+       * [10 - Pegar todas as fotos](#getphotos)
 ###
   
   * [Arquivos Principais](#arquivos)
@@ -176,9 +182,9 @@ POST http://localhost:3003/user/cadaster
 Content-Type: application/json
 
 {
-"name": "Gabrie",
+"name": "Gabriel",
  "email": "gabriel@gmail.com", 
- "password": "123456",
+ "password": "12345",
  "role": "normal"
 }
 
@@ -196,13 +202,13 @@ Content-Type: application/json
 ###
 POST http://localhost:3003/band/register
 Content-Type: application/json
-authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBlY2JmMWQxLWZjOGEtNDRhYy05NWExLTg1YzJjNGU0NzBmNiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY1NzE5NTUyOCwiZXhwIjoxNjU3MjgxOTI4fQ.SXa7UDysO4EMhQO1L7ql3vPhpi-AHQ8bhuLjCexQwCg
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBlY2JmMWQxLWZjOGEtNDRhYy05NWExLTg1YzJjNGU0NzBmNiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY1NzQxMDgzOSwiZXhwIjoxNjU3NDk3MjM5fQ.Jf7Cq02Q2qfOVJv1Cjp-Cc9w4JMbLSX_lyknNAuWR40
 
 {
-"name": "Banada Teste 1",
- "photo": "Banda teste photo 1", 
- "musicGenre": "BandaTeste music 1",
- "responsible": "Banda Teste responsible 1"
+"name": "Banda Teste 4",
+ "photo": "Banda teste photo 4", 
+ "musicGenre": "BandaTeste music 4",
+ "responsible": "Banda Teste responsible 4"
 }
 
 
@@ -213,16 +219,20 @@ authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBlY2JmMWQxLWZjOGEt
 
 
 ###
-POST http://localhost:3003/band/schedule/0f6e5890-c2c7-4cf2-9939-b00c094a2b49
+POST http://localhost:3003/band/schedule/ea73899c-c21a-4707-8efc-6b3ee64743a2
 Content-Type: application/json
-authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBlY2JmMWQxLWZjOGEtNDRhYy05NWExLTg1YzJjNGU0NzBmNiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY1NzIxODU3MCwiZXhwIjoxNjU3MzA0OTcwfQ.z_GHvsuXG_GNl8bvsC8AcWol_Yk6wQjPZcD9z5Fd5f0
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBlY2JmMWQxLWZjOGEtNDRhYy05NWExLTg1YzJjNGU0NzBmNiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY1NzQxMDgzOSwiZXhwIjoxNjU3NDk3MjM5fQ.Jf7Cq02Q2qfOVJv1Cjp-Cc9w4JMbLSX_lyknNAuWR40
 
 {
-   "photo": "Show photo Test 4",
-   "weekDay": "SEXTA",
-   "startTime": 23,
-   "endTime": 5
+   "photo": "Show photo Test 3",
+   "weekDay": "domingo",
+   "startTime": 10,
+   "endTime": 1
 }
+
+###
+GET http://localhost:3003/band/search-shows-day?chosenDay=domingo
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBlY2JmMWQxLWZjOGEtNDRhYy05NWExLTg1YzJjNGU0NzBmNiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY1NzQxMDgzOSwiZXhwIjoxNjU3NDk3MjM5fQ.Jf7Cq02Q2qfOVJv1Cjp-Cc9w4JMbLSX_lyknNAuWR40
 ```
 
 <h4 align="right"><a href="#topo">Topo</a></h4>
@@ -231,7 +241,7 @@ authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBlY2JmMWQxLWZjOGEt
 
 <h3 id="pastas">Sistema de Pastas e Arquivos</h3>
 
-![image](https://user-images.githubusercontent.com/89301596/178123024-3c73d048-b671-4572-80a4-3fdb7366f17e.png)
+![image](https://user-images.githubusercontent.com/89301596/178156717-6339d0ea-45ff-4ace-a989-05e5f2db8d65.png)
 
 <h4 align="right"><a href="#topo">Topo</a></h4>
 
@@ -247,7 +257,7 @@ authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBlY2JmMWQxLWZjOGEt
 
 <h3 id="controllers"><span style="color:yellow">Pasta controllers</span></h3>
 
-![image](https://user-images.githubusercontent.com/89301596/178123274-d2bda9df-ea28-4361-8e25-e93dbf29b7b8.png)
+![image](https://user-images.githubusercontent.com/89301596/178156742-9c896bde-7845-45c1-98f0-1b5565d0ce5f.png)
 
 <h3 id="data"><span style="color:yellow">Pasta data</span></h3>
 
@@ -257,7 +267,7 @@ authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBlY2JmMWQxLWZjOGEt
 
 <h3 id="errors"><span style="color:red">Pasta errors</span></h3>
 
-![image](https://user-images.githubusercontent.com/89301596/178123367-6cb428e2-d514-46a4-81cf-b4c5c66a28b0.png)
+![image](https://user-images.githubusercontent.com/89301596/178156778-51d2ea8c-eed9-4dae-980b-2d913ddad286.png)
 
 <h3 id="middlewares"><span style="color:violet">Pasta middlewares</span></h3>
 
@@ -267,11 +277,11 @@ authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBlY2JmMWQxLWZjOGEt
 
 <h3 id="model"><span style="color:red">Pasta model</span></h3>
 
-![image](https://user-images.githubusercontent.com/89301596/178123447-6ba6c90a-a0dc-40fd-a5c0-380974a26be3.png)
+![image](https://user-images.githubusercontent.com/89301596/178156806-76efa2ba-ed78-41d7-964d-2d49213033a4.png)
 
 <h3 id="repositores"><span style="color:gray">Pasta repositores</span></h3>
 
-![image](https://user-images.githubusercontent.com/89301596/178123460-2ba38278-33b5-48f4-9144-e1711c5a7a28.png)
+![image](https://user-images.githubusercontent.com/89301596/178156840-95f3e3bf-9736-4b2e-b7af-dedf900cf45f.png)
 
 <h3 id="routes"><span style="color:green">Pasta Routes</span></h3>
 
@@ -281,11 +291,10 @@ authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBlY2JmMWQxLWZjOGEt
 
 <h3 id="usecases"><span style="color:gray">Pasta use-cases</span></h3>
 
-![image](https://user-images.githubusercontent.com/89301596/178123537-6503c10c-f602-43e5-8885-1b535b8eca69.png)
+![image](https://user-images.githubusercontent.com/89301596/178156867-91ae0d17-af8b-4a19-813a-64e54cdba860.png)
 
 <h3 id="utils"><span style="color:limon">Pasta utils</span></h3>
 
 ![image](https://user-images.githubusercontent.com/89301596/178123548-5d693537-5c5e-4996-986f-d2e35d777d3a.png)
 
 <h4 align="right"><a href="#topo">Topo</a></h4>
-

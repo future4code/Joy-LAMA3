@@ -70,6 +70,7 @@ export class ScheduleBandShowCase {
       throw new VerifyIfHourEndTime();
     };
 
+
     const shows = await this.scheduleBandShowModel.searchShows(weekDay);
 
     const shows_at_this_time = shows
