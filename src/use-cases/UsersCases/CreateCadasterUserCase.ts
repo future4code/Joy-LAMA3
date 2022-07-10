@@ -50,7 +50,7 @@ export class CreateCadasterUserCase {
 
       if ( checkSpace(password) )  throw new VerifySpacesPassword();
 
-      if ( password.length > 6 ) throw new VerifyPasswordQuantityLine(password);
+      if ( password.length < 6 ) throw new VerifyPasswordQuantityLine(password);
 
       if ( userEmail ) throw new VerifyIfUserExist(email);
 

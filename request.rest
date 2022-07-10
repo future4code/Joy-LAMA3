@@ -18,7 +18,7 @@ Content-Type: application/json
 {
 "name": "Gabrie",
  "email": "gabriel@gmail.com", 
- "password": "123456",
+ "password": "12345",
  "role": "normal"
 }
 
@@ -36,13 +36,13 @@ Content-Type: application/json
 ###
 POST http://localhost:3003/band/register
 Content-Type: application/json
-authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBlY2JmMWQxLWZjOGEtNDRhYy05NWExLTg1YzJjNGU0NzBmNiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY1NzE5NTUyOCwiZXhwIjoxNjU3MjgxOTI4fQ.SXa7UDysO4EMhQO1L7ql3vPhpi-AHQ8bhuLjCexQwCg
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBlY2JmMWQxLWZjOGEtNDRhYy05NWExLTg1YzJjNGU0NzBmNiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY1NzQxMDgzOSwiZXhwIjoxNjU3NDk3MjM5fQ.Jf7Cq02Q2qfOVJv1Cjp-Cc9w4JMbLSX_lyknNAuWR40
 
 {
-"name": "Banada Teste 1",
- "photo": "Banda teste photo 1", 
- "musicGenre": "BandaTeste music 1",
- "responsible": "Banda Teste responsible 1"
+"name": "Banda Teste 4",
+ "photo": "Banda teste photo 4", 
+ "musicGenre": "BandaTeste music 4",
+ "responsible": "Banda Teste responsible 4"
 }
 
 
@@ -53,13 +53,17 @@ authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBlY2JmMWQxLWZjOGEt
 
 
 ###
-POST http://localhost:3003/band/schedule/0f6e5890-c2c7-4cf2-9939-b00c094a2b49
+POST http://localhost:3003/band/schedule/ea73899c-c21a-4707-8efc-6b3ee64743a2
 Content-Type: application/json
-authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBlY2JmMWQxLWZjOGEtNDRhYy05NWExLTg1YzJjNGU0NzBmNiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY1NzMwNzM2MiwiZXhwIjoxNjU3MzkzNzYyfQ.l3_mIxnP3uu3EToeB8d9UvpSoNwC_3ghQBtZyv3LiBo
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBlY2JmMWQxLWZjOGEtNDRhYy05NWExLTg1YzJjNGU0NzBmNiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY1NzQxMDgzOSwiZXhwIjoxNjU3NDk3MjM5fQ.Jf7Cq02Q2qfOVJv1Cjp-Cc9w4JMbLSX_lyknNAuWR40
 
 {
    "photo": "Show photo Test 3",
-   "weekDay": "sábado",
-   "startTime": 20,
-   "endTime": 2
+   "weekDay": "domingo",
+   "startTime": 10,
+   "endTime": 1
 }
+
+###
+GET http://localhost:3003/band/search-shows-day?chosenDay=domingo
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBlY2JmMWQxLWZjOGEtNDRhYy05NWExLTg1YzJjNGU0NzBmNiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY1NzQxMDgzOSwiZXhwIjoxNjU3NDk3MjM5fQ.Jf7Cq02Q2qfOVJv1Cjp-Cc9w4JMbLSX_lyknNAuWR40
