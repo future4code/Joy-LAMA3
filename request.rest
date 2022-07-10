@@ -39,29 +39,29 @@ Content-Type: application/json
 authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBlY2JmMWQxLWZjOGEtNDRhYy05NWExLTg1YzJjNGU0NzBmNiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY1NzQxMDgzOSwiZXhwIjoxNjU3NDk3MjM5fQ.Jf7Cq02Q2qfOVJv1Cjp-Cc9w4JMbLSX_lyknNAuWR40
 
 {
-"name": "Banda Teste 4",
- "photo": "Banda teste photo 4", 
- "musicGenre": "BandaTeste music 4",
- "responsible": "Banda Teste responsible 4"
+"name": "Vingadores do Brega",
+ "photo": "https://e-cdn-images.dzcdn.net/images/artist/71ccab8b0e60bdbd5ec10438a87342cb/264x264-000000-80-0-0.jpg", 
+ "musicGenre": "Brega Rock",
+ "responsible": "Batman do Brega Rock"
 }
 
 
 ###
-GET http://localhost:3003/band/Banada Teste 1
+GET http://localhost:3003/band/vingadores do brega
 Content-Type: application/json
-authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBlY2JmMWQxLWZjOGEtNDRhYy05NWExLTg1YzJjNGU0NzBmNiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY1NzIxODM4OSwiZXhwIjoxNjU3MzA0Nzg5fQ.BVcJ8hitXwkuvZAxhn1N4ZI0jfpovX2gCW-ssR43dEE
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQwZWIzYjAzLTU0MzktNGY2MS1iNWI4LTQ5OGFkZGUxM2IwOCIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY1NzQ4MjY2OCwiZXhwIjoxNjU3NTY5MDY4fQ.IIz5d2PeTzvRK-MUiQO6QnQPizQ-0vZKp_2HH_msgM4
 
 
 ###
-POST http://localhost:3003/band/schedule/ea73899c-c21a-4707-8efc-6b3ee64743a2
+POST http://localhost:3003/band/schedule/52d4b8b2-95c3-4a0c-93ff-b7258b158629
 Content-Type: application/json
-authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBlY2JmMWQxLWZjOGEtNDRhYy05NWExLTg1YzJjNGU0NzBmNiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY1NzQxMDgzOSwiZXhwIjoxNjU3NDk3MjM5fQ.Jf7Cq02Q2qfOVJv1Cjp-Cc9w4JMbLSX_lyknNAuWR40
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQwZWIzYjAzLTU0MzktNGY2MS1iNWI4LTQ5OGFkZGUxM2IwOCIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY1NzQ4MjY2OCwiZXhwIjoxNjU3NTY5MDY4fQ.IIz5d2PeTzvRK-MUiQO6QnQPizQ-0vZKp_2HH_msgM4
 
 {
-   "photo": "Show photo Test 3",
+   "photo": "https://2.bp.blogspot.com/-1tjtYYqfmWs/XNBgtcHh5CI/AAAAAAAARBQ/lxpQfWLaUBYzSfhmNa1u8jEITMy-Ft93QCLcBGAs/s1600/gugu14.jpg",
    "weekDay": "domingo",
-   "startTime": 10,
-   "endTime": 1
+   "startTime": 20,
+   "endTime": 24
 }
 
 ###

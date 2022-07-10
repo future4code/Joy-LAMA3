@@ -71,7 +71,7 @@ export class VerifyIfHourStartTime extends CustomError {
 export class VerifyIfHourEndTime extends CustomError {
   constructor () {
     super (
-      `The maximum show time is up to 8 hours!.`, 
+      `End time for shows ends is until 24 pm!.`, 
         406
       )
   };

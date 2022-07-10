@@ -66,6 +66,11 @@ export class ScheduleBandShowCase {
       throw new VerifyIfHourStartTime();
     };
 
+    if( endTime > 24 || endTime < startTime ) {
+      throw new VerifyIfHourEndTime();
+    };
+
+
     const shows = await this.scheduleBandShowModel.searchShows(weekDay);
 
     const shows_at_this_time = shows
@@ -88,20 +93,19 @@ export class ScheduleBandShowCase {
     .at(-1);
 
     if ( showsAfterStartTimeTerm ) {
-        //* Duração total do show do usuário.
-        const user_show_duration = startTime + endTime;
-
-        if ( user_show_duration > showsAfterStartTimeTerm.start_time ) {
+        
+        const initialHourShowExist = showsAfterStartTimeTerm.start_time;
+        
+        if ( endTime > initialHourShowExist ) {
           throw new  VerifyShowAfterStartTimeTerm();
         };
       };
 
       if ( showsBeforeStartTimeTerm ) {
-        //* Duração total do show já existente.
-        const total_duration_of_existing_show =
-        showsBeforeStartTimeTerm.start_time + showsBeforeStartTimeTerm.end_time;
+        
+        const finalTimeShowExist = showsBeforeStartTimeTerm.end_time
 
-        if ( startTime < total_duration_of_existing_show ) {
+        if ( startTime < finalTimeShowExist) {
           throw new  VerifyShowBeforeStartTimeTerm();
         };
       };

@@ -38,7 +38,7 @@ export class CatchAllTheShowsOfTheDayCase {
 
     const showsFoundOnTheDay = shows.map(( show ) => {
       const starTime = show.start_time;
-      const finalShowTime = show.start_time + show.end_time;
+      const finalShowTime = show.end_time;
 
       return {
         bandId: show.band_id,
