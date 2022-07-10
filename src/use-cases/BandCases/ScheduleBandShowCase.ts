@@ -66,10 +66,6 @@ export class ScheduleBandShowCase {
       throw new VerifyIfHourStartTime();
     };
 
-    if( endTime > 8 || endTime <= 0 ) {
-      throw new VerifyIfHourEndTime();
-    };
-
     const shows = await this.scheduleBandShowModel.searchShows(weekDay);
 
     const shows_at_this_time = shows
